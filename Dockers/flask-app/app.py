@@ -6,9 +6,9 @@ app = Flask(__name__)
 
 # list of cat images
 images = [
-    "https://github.com/CamilaCortex/MLOps-AWS/blob/main/Dockers/flask-app/images/image1.gif",
-    "https://github.com/CamilaCortex/MLOps-AWS/blob/main/Dockers/flask-app/images/image2.gif",
-    "https://github.com/CamilaCortex/MLOps-AWS/blob/main/Dockers/flask-app/images/image3.gif",
+    "https://raw.githubusercontent.com/manifoldailearning/mlops-with-aws-datascientists/main/Section-11-Docker/images/image1.gif",
+    "https://raw.githubusercontent.com/manifoldailearning/mlops-with-aws-datascientists/main/Section-11-Docker/images/image2.gif",
+    "https://raw.githubusercontent.com/manifoldailearning/mlops-with-aws-datascientists/main/Section-11-Docker/images/image3.giff",
 ]
 
 

@@ -34,6 +34,7 @@ sudo service docker start
 
 # Agregar el usuario ec2-user al grupo de docker para evitar usar sudo
 sudo usermod -a -G docker ec2-user o sudo usermod -a -G docker $USER
+sudo usermod -aG docker $USER
 
 # Nos salimos de ec2 y nos volvemos a conectar
 # Run hello-word
@@ -46,7 +47,7 @@ docker ps
 docker ps -a
 
 # Git clone repo
-git clone <HTTPS
+git clone <HTTPS>
 
 # Hacemos un build
 docker build -t nombre-de-tu-imagen .
@@ -58,5 +59,11 @@ docker images
 
 # Docker run
 docker run -d -p 5000:5000 nombre-de-tu-imagen
+
+#Docker stop
+docker stop <container_id>
+
+#Docker run iteractive
+docker run -it cats /bin/sh
 
 ```

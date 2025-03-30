@@ -49,7 +49,7 @@ def _parse_args():
     parser.add_argument('--current-host', type=str, default=os.environ.get('SM_CURRENT_HOST'))
 
     return parser.parse_known_args()
- 
+
 
 if __name__ == "__main__":
     args, unknown = _parse_args()

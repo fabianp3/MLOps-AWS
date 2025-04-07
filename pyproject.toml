@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "mlops-aws"
+version = "1.0.0"
+description = ""
+authors = ["CamilaCortex <mariadurangoai@gmail.com>"]
+readme = "README.md"
+packages = [{include = "mlops_aws"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+cloudpickle = "==2.0.0"
+mlflow = ">=1.11.0"
+pandas = ">=1.1.2"
+numpy = ">=1.18.5"
+matplotlib = ">=3.2.2"
+seaborn = ">=0.11.0"
+scikit-learn = ">=0.22.2"
+click = "^8.1.8"
+
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

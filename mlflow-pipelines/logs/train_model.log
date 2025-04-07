@@ -1,0 +1,117 @@
+__main__ - ERROR - 2025-04-07 07:04:55,310 - Failed to run workflow due to error:
+Non-zero exit code: 1
+Command: ['/Users/mdurango/University/MLOps-AWS/.venv/bin/python', '-m', 'virtualenv', '--python', '/Users/mdurango/.pyenv/versions/3.11.9/bin/python', '/Users/mdurango/.mlflow/envs/mlflow-ca2791bc07b5950387301a1cc679a4e8e0f2b9e5']
+__main__ - ERROR - 2025-04-07 07:04:55,314 - Traceback (most recent call last):
+  File "/Users/mdurango/University/MLOps-AWS/mlflow-pipelines/main.py", line 40, in <module>
+    workflow()
+  File "/Users/mdurango/University/MLOps-AWS/.venv/lib/python3.11/site-packages/click/core.py", line 1161, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mdurango/University/MLOps-AWS/.venv/lib/python3.11/site-packages/click/core.py", line 1082, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/Users/mdurango/University/MLOps-AWS/.venv/lib/python3.11/site-packages/click/core.py", line 1443, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mdurango/University/MLOps-AWS/.venv/lib/python3.11/site-packages/click/core.py", line 788, in invoke
+    return __callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mdurango/University/MLOps-AWS/mlflow-pipelines/main.py", line 25, in workflow
+    _run("load_raw_data")
+  File "/Users/mdurango/University/MLOps-AWS/mlflow-pipelines/main.py", line 16, in _run
+    submitted_run = mlflow.run(".", entrypoint, parameters=parameters)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mdurango/University/MLOps-AWS/.venv/lib/python3.11/site-packages/mlflow/projects/__init__.py", line 357, in run
+    submitted_run_obj = _run(
+                        ^^^^^
+  File "/Users/mdurango/University/MLOps-AWS/.venv/lib/python3.11/site-packages/mlflow/projects/__init__.py", line 110, in _run
+    submitted_run = backend.run(
+                    ^^^^^^^^^^^^
+  File "/Users/mdurango/University/MLOps-AWS/.venv/lib/python3.11/site-packages/mlflow/projects/backend/local.py", line 163, in run
+    activate_cmd = _create_virtualenv(
+                   ^^^^^^^^^^^^^^^^^^^
+  File "/Users/mdurango/University/MLOps-AWS/.venv/lib/python3.11/site-packages/mlflow/utils/virtualenv.py", line 295, in _create_virtualenv
+    _exec_cmd(
+  File "/Users/mdurango/University/MLOps-AWS/.venv/lib/python3.11/site-packages/mlflow/utils/process.py", line 141, in _exec_cmd
+    raise ShellCommandException.from_completed_process(comp_process)
+mlflow.utils.process.ShellCommandException: Non-zero exit code: 1
+Command: ['/Users/mdurango/University/MLOps-AWS/.venv/bin/python', '-m', 'virtualenv', '--python', '/Users/mdurango/.pyenv/versions/3.11.9/bin/python', '/Users/mdurango/.mlflow/envs/mlflow-ca2791bc07b5950387301a1cc679a4e8e0f2b9e5']
+
+__main__ - ERROR - 2025-04-07 07:06:27,745 - Failed to run workflow due to error:
+Non-zero exit code: 1
+Command: ['/Users/mdurango/University/MLOps-AWS/.venv/bin/python', '-m', 'virtualenv', '--python', '/Users/mdurango/.pyenv/versions/3.11.9/bin/python', '/Users/mdurango/.mlflow/envs/mlflow-ca2791bc07b5950387301a1cc679a4e8e0f2b9e5']
+__main__ - ERROR - 2025-04-07 07:06:27,748 - Traceback (most recent call last):
+  File "/Users/mdurango/University/MLOps-AWS/mlflow-pipelines/main.py", line 40, in <module>
+    workflow()
+  File "/Users/mdurango/University/MLOps-AWS/.venv/lib/python3.11/site-packages/click/core.py", line 1161, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mdurango/University/MLOps-AWS/.venv/lib/python3.11/site-packages/click/core.py", line 1082, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/Users/mdurango/University/MLOps-AWS/.venv/lib/python3.11/site-packages/click/core.py", line 1443, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mdurango/University/MLOps-AWS/.venv/lib/python3.11/site-packages/click/core.py", line 788, in invoke
+    return __callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mdurango/University/MLOps-AWS/mlflow-pipelines/main.py", line 25, in workflow
+    _run("load_raw_data")
+  File "/Users/mdurango/University/MLOps-AWS/mlflow-pipelines/main.py", line 16, in _run
+    submitted_run = mlflow.run(".", entrypoint, parameters=parameters)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mdurango/University/MLOps-AWS/.venv/lib/python3.11/site-packages/mlflow/projects/__init__.py", line 357, in run
+    submitted_run_obj = _run(
+                        ^^^^^
+  File "/Users/mdurango/University/MLOps-AWS/.venv/lib/python3.11/site-packages/mlflow/projects/__init__.py", line 110, in _run
+    submitted_run = backend.run(
+                    ^^^^^^^^^^^^
+  File "/Users/mdurango/University/MLOps-AWS/.venv/lib/python3.11/site-packages/mlflow/projects/backend/local.py", line 163, in run
+    activate_cmd = _create_virtualenv(
+                   ^^^^^^^^^^^^^^^^^^^
+  File "/Users/mdurango/University/MLOps-AWS/.venv/lib/python3.11/site-packages/mlflow/utils/virtualenv.py", line 295, in _create_virtualenv
+    _exec_cmd(
+  File "/Users/mdurango/University/MLOps-AWS/.venv/lib/python3.11/site-packages/mlflow/utils/process.py", line 141, in _exec_cmd
+    raise ShellCommandException.from_completed_process(comp_process)
+mlflow.utils.process.ShellCommandException: Non-zero exit code: 1
+Command: ['/Users/mdurango/University/MLOps-AWS/.venv/bin/python', '-m', 'virtualenv', '--python', '/Users/mdurango/.pyenv/versions/3.11.9/bin/python', '/Users/mdurango/.mlflow/envs/mlflow-ca2791bc07b5950387301a1cc679a4e8e0f2b9e5']
+
+__main__ - ERROR - 2025-04-07 07:12:46,821 - Failed to run workflow due to error:
+Non-zero exit code: 1
+Command: ['/Users/mdurango/University/MLOps-AWS/.venv/bin/python', '-m', 'virtualenv', '--python', '/Users/mdurango/.pyenv/versions/3.11.9/bin/python', '/Users/mdurango/.mlflow/envs/mlflow-ca2791bc07b5950387301a1cc679a4e8e0f2b9e5']
+__main__ - ERROR - 2025-04-07 07:12:46,824 - Traceback (most recent call last):
+  File "/Users/mdurango/University/MLOps-AWS/mlflow-pipelines/main.py", line 40, in <module>
+    workflow()
+  File "/Users/mdurango/University/MLOps-AWS/.venv/lib/python3.11/site-packages/click/core.py", line 1161, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mdurango/University/MLOps-AWS/.venv/lib/python3.11/site-packages/click/core.py", line 1082, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/Users/mdurango/University/MLOps-AWS/.venv/lib/python3.11/site-packages/click/core.py", line 1443, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mdurango/University/MLOps-AWS/.venv/lib/python3.11/site-packages/click/core.py", line 788, in invoke
+    return __callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mdurango/University/MLOps-AWS/mlflow-pipelines/main.py", line 25, in workflow
+    _run("load_raw_data")
+  File "/Users/mdurango/University/MLOps-AWS/mlflow-pipelines/main.py", line 16, in _run
+    submitted_run = mlflow.run(".", entrypoint, parameters=parameters)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mdurango/University/MLOps-AWS/.venv/lib/python3.11/site-packages/mlflow/projects/__init__.py", line 357, in run
+    submitted_run_obj = _run(
+                        ^^^^^
+  File "/Users/mdurango/University/MLOps-AWS/.venv/lib/python3.11/site-packages/mlflow/projects/__init__.py", line 110, in _run
+    submitted_run = backend.run(
+                    ^^^^^^^^^^^^
+  File "/Users/mdurango/University/MLOps-AWS/.venv/lib/python3.11/site-packages/mlflow/projects/backend/local.py", line 163, in run
+    activate_cmd = _create_virtualenv(
+                   ^^^^^^^^^^^^^^^^^^^
+  File "/Users/mdurango/University/MLOps-AWS/.venv/lib/python3.11/site-packages/mlflow/utils/virtualenv.py", line 295, in _create_virtualenv
+    _exec_cmd(
+  File "/Users/mdurango/University/MLOps-AWS/.venv/lib/python3.11/site-packages/mlflow/utils/process.py", line 141, in _exec_cmd
+    raise ShellCommandException.from_completed_process(comp_process)
+mlflow.utils.process.ShellCommandException: Non-zero exit code: 1
+Command: ['/Users/mdurango/University/MLOps-AWS/.venv/bin/python', '-m', 'virtualenv', '--python', '/Users/mdurango/.pyenv/versions/3.11.9/bin/python', '/Users/mdurango/.mlflow/envs/mlflow-ca2791bc07b5950387301a1cc679a4e8e0f2b9e5']
+

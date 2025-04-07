@@ -1,0 +1,12 @@
+name: mlflow_example
+
+
+entry_points:
+  load_raw_data:
+    command: "python preprocess.py"
+
+  train:
+    command: "python train.py"
+
+  main:
+    command: "python main.py"
